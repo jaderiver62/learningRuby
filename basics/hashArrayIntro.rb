@@ -9,7 +9,7 @@ def iterate_colors(colors)
     colors.enum_for.to_a
 end
 def iterate_colors(colors)
-    colors.enum_for.to_a
+    colors.enum_for.to_a enum
 end
 def skip_animals(animals, skip)
     arr = []
@@ -20,3 +20,6 @@ def skip_animals(animals, skip)
     end
     return arr
 end
+def group_by_marks(marks, pass_marks)
+    return marks.group_by { |k, v| v >= pass_marks ? "Passed" : "Failed"}
+    end
