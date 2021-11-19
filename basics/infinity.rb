@@ -31,14 +31,5 @@ Inf != Inf    #=> false
 Inf.infinite?   #=> true
 (1.0).infinite? #=> false
 
-# Ruby 2.0 introduced Enumerator::Lazy , a special type of enumerator which helps us in processing chains of operations on a collection without actually executing it instantly. By applying Enumerable#lazy method on any enumerable object, we can convert that object into Enumerator::Lazy object.
-# Enumerator::Lazy can be constructed from any Enumerable with the Enumerable
-# lazy method.
 
-# Lazy evaluation, or call-by-need, means the value of an variable is evaluated when it is needed, which is a opposite concept of call-by-name, or eager evaluation
-
-# First:
-a = [ "q", "r", "s", "t" ]
-a.first     #=> "q"
-a.first(2)  #=> ["q", "r"]
 
